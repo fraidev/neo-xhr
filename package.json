@@ -1,10 +1,10 @@
 {
-	"name": "xhr2-cookies",
+	"name": "neo-xhr2-cookies",
 	"version": "1.1.0",
-	"author": "Ionut Costica <ionut.costica@gmail.com>",
+	"author": "Frai <fraifelipe@gmail.com>",
 	"license": "MIT",
 	"description": "XMLHttpRequest polyfill for node.js",
-	"repository": "git://github.com/souldreamer/xhr2-cookies.git",
+	"repository": "git://github.com/fraidev/neo-xhr2-cookies.git",
 	"keywords": [
 		"XMLHttpRequest",
 		"cookies",
@@ -22,7 +22,6 @@
 		"@types/morgan": "^1.7.35",
 		"@types/node": "^6",
 		"ava": "^0.23.0",
-		"ava-ts": "^0.23.0",
 		"body-parser": "^1.18.2",
 		"cookie-parser": "^1.4.3",
 		"express": "^4.16.2",
@@ -34,15 +33,18 @@
 	},
 	"scripts": {
 		"prepare": "tsc",
-		"test": "tsc -p ./test && ava-ts -v"
+		"test": "tsc -p ./test && ava -v"
 	},
 	"ava": {
 		"files": [
-			"test/*.spec.ts"
+			"test/*.spec.js"
 		],
 		"source": [
-			"*.ts",
+			"*.js",
 			"!dist/**/*"
+		],
+		"nodeArguments": [
+			"--trace-deprecation"
 		]
 	}
 }
