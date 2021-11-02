@@ -1,6 +1,6 @@
 # XMLHttpRequest polyfill for node.js
 
-Based on [https://github.com/pwnall/node-xhr2](https://github.com/pwnall/node-xhr2)
+Based on [https://github.com/souldreamer/xhr2-cookies](https://github.com/souldreamer/xhr2-cookies2)
 
 * Adds support for cookies
 * Adds in-project TypeScript type definitions
