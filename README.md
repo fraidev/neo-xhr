@@ -24,6 +24,9 @@ XMLHttpRequest.cookieJar = Cookie.CookieJar();
 
 ### Changelog
 
+#### `1.1.1`
+* initializing buffers in a non-obsolete way
+
 #### `1.1.0`
 * added saving of cookies between requests, not just redirects
 * bug fixes
